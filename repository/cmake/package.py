@@ -1,5 +1,5 @@
 name = "cmake"
-version = '3.5.0'
+version = '3.5.1'
 authors = ['Kitware']
 uuid = "723072b0-ea27-11e5-8fab-0025902178a3"
 description = 'Open-Source cross platform'

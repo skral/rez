@@ -5,7 +5,7 @@ import zipfile
 
 def build(source_path, build_path, install_path, targets):
 
-    name = "cmake-3.5.0-win32-x86"
+    name = "cmake-3.5.1-win32-x86"
     zip_path = os.path.join(source_path, name + ".zip")
 
     if not os.path.exists(zip_path):
