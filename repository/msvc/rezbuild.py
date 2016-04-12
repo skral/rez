@@ -35,7 +35,7 @@ def build(source_path, build_path, install_path, targets):
            "msiexec",
            "/a",
            msi_path,
-           "/qb",
+           "/qn",
            "/norestart",
            "TARGETDIR=" + msi_target_dir]
     _execute(cmd)
