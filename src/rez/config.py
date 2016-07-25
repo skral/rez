@@ -215,6 +215,7 @@ config_schema = Schema({
     "packages_path":                                PathList,
     "plugin_path":                                  PathList,
     "bind_module_path":                             PathList,
+    "default_path":                                 PathList,
     "implicit_packages":                            StrList,
     "parent_variables":                             StrList,
     "resetting_variables":                          StrList,

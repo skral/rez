@@ -61,7 +61,9 @@ class CMD(Shell):
 
     @classmethod
     def get_syspaths(cls):
-        if not cls.syspaths:
+        if not cls.syspaths and os.environ.get('REZ_DEFAULT_PATH'):
+            cls.syspaths = os.environ.get('REZ_DEFAULT_PATH').split(os.pathsep)
+        elif not cls.syspaths:
             paths = []
 
             cmd = ["REG", "QUERY", "HKLM\\SYSTEM\\CurrentControlSet\\Control\\Session Manager\\Environment", "/v", "PATH"]
